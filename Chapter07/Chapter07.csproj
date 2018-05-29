@@ -1,9 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <StartupObject>Chapter07.Program</StartupObject>
-  </PropertyGroup>
+    <StartupObject>Chapter07.Starter</StartupObject>
+</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.1.1" />
+  </ItemGroup>
 
 </Project>
