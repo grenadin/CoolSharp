@@ -11,6 +11,7 @@ namespace Chapter08
             Console.WriteLine(x.Data);
             Console.ReadLine();
             
+            //beware for the confuse the name of Testobject.cs in ch07 and ch08
 
 
         }
