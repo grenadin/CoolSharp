@@ -5,11 +5,22 @@ using System.Text;
 namespace Chapter07
 {
     class Person
-    {  
-        public string name, surname;
-        public bool gender;
-        public int age;
-        public string nationality;
+    {
+        string name;
+        int age; 
+
+         string surname;
+         bool gender;
+         string nationality;
+
+      
+
+        public int Age { get => Age1; set => Age1 = value; }
+        public string Name { get => name; set => name = value; }
+        public int Age1 { get => age; set => age = value; }
+        public string Surname { get => surname; set => surname = value; }
+        public bool Gender { get => gender; set => gender = value; }
+        public string Nationality { get => nationality; set => nationality = value; }
 
         public void Walk()
         {
@@ -26,10 +37,9 @@ namespace Chapter07
             Console.WriteLine($"Sentence..."+sentence);
         }
 
-        public Person()
-        {
-            Console.WriteLine("call");
-        }
+
+       
+        
 
         
 

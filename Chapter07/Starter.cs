@@ -8,14 +8,14 @@ namespace Chapter07
         public static void Main(string[] args)
         {
 
-            Person me = new Person {name="hhh" };
+            Person me1 = new Person();
             
-            
+        
+          
 
 
 
-
-            Console.WriteLine($"{me.name} {me.age} {me.surname}");
+            Console.WriteLine($"{me1.Name} {me1.Age}");
 
 
             #region page 209
