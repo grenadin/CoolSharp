@@ -17,6 +17,7 @@ namespace Chapter07
             me.Walk();
             me.Run();
             me.Talk("Hello");
+            Console.WriteLine($"My name is {me.name} {me.surname} and {me.age} year old");
             Console.ReadLine();
         }
     }        

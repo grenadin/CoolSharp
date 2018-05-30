@@ -23,7 +23,7 @@ namespace Chapter07
 
         public void Talk(string sentence)
         {
-            Console.WriteLine("Say..." + sentence);
+            Console.WriteLine($"Say...{sentence}");
         }
 
 
