@@ -5,7 +5,7 @@ using System.Text;
 namespace Chapter07
 {
     class Person
-    {  
+    {
         public string name, surname;
         public bool gender;
         public int age;
@@ -15,7 +15,7 @@ namespace Chapter07
         {
             Console.WriteLine("Walk...");
         }
-        
+
         public void Run()
         {
             Console.WriteLine("Run...");
@@ -23,17 +23,8 @@ namespace Chapter07
 
         public void Talk(string sentence)
         {
-            Console.WriteLine($"Sentence..."+sentence);
+            Console.WriteLine("Say..." + sentence);
         }
-
-        public Person()
-        {
-            Console.WriteLine("call");
-        }
-
-        
-
-      
 
 
     }
