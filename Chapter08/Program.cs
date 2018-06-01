@@ -6,13 +6,13 @@ namespace Chapter08
     {
         static void Main(string[] args)
         {
-            TestObject x = new TestObject();
-            x.Data = 50;
-            Console.WriteLine(x.Data);
-            Console.ReadLine();
+            NokiaPhone myMobile = new NokiaPhone("8250", "silver", true);
+            myMobile.Mask = "gold";
+            NokiaPhone yourMobile = new NokiaPhone("8800", "red");
+            yourMobile.Mask = "gold";
             
 
-            //beware for the confuse the name of Testobject.cs in ch07 and ch08
+           
 
 
         }

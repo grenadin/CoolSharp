@@ -9,13 +9,14 @@ namespace Chapter08
         string model;
         string mask;
         bool maskChangeable;
+
         string IMEI;
 
         public NokiaPhone(string model, string mask)
         {
             this.model = model;
             this.mask = mask;
-           
+            
         }
 
         public NokiaPhone(string model, string mask, bool maskChangeable)
@@ -23,30 +24,11 @@ namespace Chapter08
             this.model = model;
             this.mask = mask;
             this.maskChangeable = maskChangeable;
-          
         }
 
-        public void changeMask(string mask)
-        {
-            if (maskChangeable)
-            {
-                this.mask = mask;
-                Console.WriteLine($"{ this.model} Change to color { this.mask}");
-            }
-            else
-            {
-                Console.WriteLine($"Sorry this {this.model} model can not changemask");
-            }
-        }
+        public string Model { get => model; set => model = value; }
+        public string Mask { get => mask; set => mask = value; }
+        public bool MaskChangeable { get => maskChangeable; set => maskChangeable = value; }
 
-        public string getModel()
-        {
-            return model;
-        }
-
-        public bool changeAble()
-        {
-            return maskChangeable;
-        }
     }
 }
