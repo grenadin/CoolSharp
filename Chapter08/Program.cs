@@ -6,13 +6,13 @@ namespace Chapter08
     {
         static void Main(string[] args)
         {
-            NokiaPhone myMobile = new NokiaPhone("8250", "silver", true);
-            myMobile.Mask = "gold";
-            NokiaPhone yourMobile = new NokiaPhone("8800", "red");
-            yourMobile.Mask = "gold";
-            
+            NokiaPhone myMobile = new NokiaPhone("8350","silver",true);
 
-           
+            myMobile.Mask = "gold"; // this line set new mask. *** !beware this!! when call propertie it take action automatically
+
+            NokiaPhone yourMobile = new NokiaPhone("8800", "red");
+            yourMobile.Mask = "goldd"; // this line set new mask. *** ! beware this!! when call propertie it take action automatically
+
 
 
         }

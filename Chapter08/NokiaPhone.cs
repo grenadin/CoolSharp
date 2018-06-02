@@ -6,29 +6,38 @@ namespace Chapter08
 {
     class NokiaPhone
     {
-        string model;
-        string mask;
-        bool maskChangeable;
-
-        string IMEI;
+        private string model;
+        private string mask;
+        private bool maskChangeable;
 
         public NokiaPhone(string model, string mask)
         {
             this.model = model;
-            this.mask = mask;
-            
+            this.mask = mask; // beware this!! when call propertie it take action automatically
+            this.maskChangeable = false;
         }
 
         public NokiaPhone(string model, string mask, bool maskChangeable)
         {
             this.model = model;
-            this.mask = mask;
+            this.mask = mask; // beware this!! when call propertie it take action automatically
             this.maskChangeable = maskChangeable;
         }
 
-        public string Model { get => model; set => model = value; }
-        public string Mask { get => mask; set => mask = value; }
-        public bool MaskChangeable { get => maskChangeable; set => maskChangeable = value; }
-
+        public string Mask
+        {
+            get => mask;
+            set
+            {
+                if(maskChangeable)
+                {
+                    mask = value;
+                    Console.WriteLine($"This {model} can change mask to {mask}");
+                }
+                else
+                    Console.WriteLine($"This {model} can not change mask");
+               
+            }
+        }
     }
 }
