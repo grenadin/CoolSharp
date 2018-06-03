@@ -6,9 +6,13 @@ namespace Chapter08
 {
     class ObjectInitializer
     {
-        int age;
+        
+        string home_number;
+        string building;
 
-        public string Name { get; set; }
-        public int Age { get => age; set => age = value; }
+        
+
+        public string Home_number { get => home_number; set => home_number = value; }
+        public string Building { get => building; set => building = value; }
     }
 }

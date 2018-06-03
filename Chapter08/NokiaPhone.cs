@@ -10,6 +10,8 @@ namespace Chapter08
         private string mask;
         private bool maskChangeable;
 
+        int age;
+
         public NokiaPhone(string model, string mask)
         {
             this.model = model;
@@ -39,5 +41,11 @@ namespace Chapter08
                
             }
         }
+
+        public int Age { get => age; set => age = value; }
+
+
+
+
     }
 }
