@@ -14,13 +14,10 @@ namespace Chapter08
             yourMobile.Mask = "gold"; // this line set new mask. *** ! beware this!! when call propertie it take action automatically
 
 
+            ObjectInitializer ObI = new ObjectInitializer("12/12", "IAC");
+            ObI.Home_number = "1111";
 
-            ObjectInitializer Objinit = new ObjectInitializer { Home_number="12/12", Building ="VTUW"};
-           
-           
-            Console.WriteLine(Objinit.Building);
-            Objinit.Building = "VTUI";
-            Console.WriteLine(Objinit.Building);
+            Console.WriteLine(ObI.Home_number);
             Console.ReadLine();
 
 
