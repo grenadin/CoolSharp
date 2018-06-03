@@ -13,6 +13,7 @@ namespace Chapter08
             NokiaPhone yourMobile = new NokiaPhone("8800", "red");
             yourMobile.Mask = "gold"; // this line set new mask. *** ! beware this!! when call propertie it take action automatically
 
+            ObjectInitializer Objinit = new ObjectInitializer { Name = "toon", Age = 41 };
 
 
         }
