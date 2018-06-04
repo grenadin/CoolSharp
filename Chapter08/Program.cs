@@ -23,28 +23,30 @@ namespace Chapter08
 
             //Console.ReadLine();
 
-            Toilet t_home1 = new Toilet(true);
-            Toilet t_home2 = new Toilet(false);
+            //Toilet t_home1 = new Toilet(true);
+            //Toilet t_home2 = new Toilet(false);
 
-            Toilet.UnitPrice = 12;
-            
-            t_home1.Flush();
-            t_home2.Flush();
+            //Toilet.UnitPrice = 12;
 
-            Toilet.UnitPrice = 13;
+            //t_home1.Flush();
+            //t_home2.Flush();
 
-            t_home1.Flush();
-            t_home2.Flush();
+            //Toilet.UnitPrice = 13;
 
-            t_home1.Total = 50;
-            t_home2.Total = 50;
+            //t_home1.Flush();
+            //t_home2.Flush();
 
-            t_home1.Flush();
-            t_home2.Flush();
+            //t_home1.Total = 50;
+            //t_home2.Total = 50;
 
-            Toilet.Fill();
+            //t_home1.Flush();
+            //t_home2.Flush();
 
-            
+            //Toilet.Fill();
+
+            Test t = new Test();
+            Console.WriteLine(Test.a); // Show value only 
+            Console.WriteLine();
 
             
 
