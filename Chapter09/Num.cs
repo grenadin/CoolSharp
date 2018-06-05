@@ -6,20 +6,17 @@ namespace Chapter09
 {
     class Num
     {
-        int data;
-
-
         public Num()
         {
 
         }
         public Num(int data)
         {
-            this.data = data;
+            this.Data = data;
             
         }
 
-        public int Data { get => data; set => data = value; }
+        public int Data { get; set; }  
 
 
         public static Num FindMax(Num x, Num y)
@@ -29,6 +26,16 @@ namespace Chapter09
                 return x;
             else
                 return y;
+        }
+
+        public static Num operator +(Num x,  Num y)
+        {
+            return new Num(x.Data + y.Data);
+        }
+
+        public static Num operator ++(Num x)
+        {
+            return new Num(x.Data + 1);
         }
 
     }
