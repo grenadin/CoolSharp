@@ -11,21 +11,20 @@ namespace Chapter10
 
             Base myTest = new Derived();
 
-            Console.WriteLine(myBase.Meth1());
-            Console.WriteLine(myBase.Meth2());
-            Console.WriteLine(myBase.Meth3());
-            Console.WriteLine(myBase.Meth4());
-
-            Console.WriteLine(myDerived.Meth1());
-            Console.WriteLine(myDerived.Meth2()); 
-            Console.WriteLine(myDerived.Meth3());
-            Console.WriteLine(myDerived.Meth4());
-
-
-            Console.WriteLine(myTest.Meth1());
-            Console.WriteLine(myTest.Meth2());
-            Console.WriteLine(myTest.Meth3());
-            Console.WriteLine(myTest.Meth4());
+            Console.WriteLine($"{myBase.Meth1()} call Meth1() from Base Class" );
+            Console.WriteLine($"{myBase.Meth2()} call Meth2() from Base Class");
+            Console.WriteLine($"{myBase.Meth3()} call Meth3() from Base Class");
+            Console.WriteLine($"{myBase.Meth4()} call Meth4() from Base Class");
+            Console.WriteLine("----------------------------------------------------------------------------");
+            Console.WriteLine($"{myDerived.Meth1()} call Meth1() from Derived Class");
+            Console.WriteLine($"{myDerived.Meth2()} call Meth2() from Derived Class but hide Base Function"); 
+            Console.WriteLine($"{myDerived.Meth3()} call Meth3() from Derived Class don't use new keyword");
+            Console.WriteLine($"{myDerived.Meth4()} call Meth3() from Derived Class don't use new keyword");
+            Console.WriteLine("----------------------------------------------------------------------------");
+            Console.WriteLine($"{myTest.Meth1()} call Meth1() but call from Derived ");
+            Console.WriteLine($"{myTest.Meth2()} call Meth2() but call from Base ");
+            Console.WriteLine($"{myTest.Meth3()} call Meth3() but call from Base");
+            Console.WriteLine($"{myTest.Meth4()} call Meth4() but call from Base");
 
             
 
