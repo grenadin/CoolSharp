@@ -25,5 +25,18 @@ namespace Chapter10
         {
             return "MyDerived-Meth4";
         }
+
+
+        public override int Foo()
+        {
+            Console.WriteLine("yeah");
+            return 6;
+        }
+
+
+        public Derived()
+        {
+            Console.WriteLine("hi from derived");
+        }
     }
 }

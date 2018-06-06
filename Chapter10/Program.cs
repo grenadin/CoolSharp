@@ -7,7 +7,10 @@ namespace Chapter10
         static void Main(string[] args)
         {
             Base myBase = new Base();
+
+            
             Derived myDerived = new Derived();
+            
 
             Base myTest = new Derived();
 
@@ -25,6 +28,8 @@ namespace Chapter10
             Console.WriteLine($"{myTest.Meth2()} call Meth2() but call from Base ");
             Console.WriteLine($"{myTest.Meth3()} call Meth3() but call from Base");
             Console.WriteLine($"{myTest.Meth4()} call Meth4() but call from Base");
+
+            myTest.Foo();
 
             
 
