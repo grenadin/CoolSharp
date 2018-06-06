@@ -26,17 +26,18 @@ namespace Chapter10
             return "MyBase-Meth4";
         }
 
-        public virtual int Foo()
-        {
-            Console.WriteLine("hi");
-            return 5;
-        }
+       
 
         public int a = 6;
 
         public Base()
         {
             Console.WriteLine("hi");
+        }
+
+        protected void Method1()
+        {
+            Console.WriteLine("Method1");
         }
         
 

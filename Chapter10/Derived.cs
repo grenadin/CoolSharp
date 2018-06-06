@@ -27,10 +27,9 @@ namespace Chapter10
         }
 
 
-        public override int Foo()
+       public void t()
         {
-            Console.WriteLine("yeah");
-            return 6;
+            Method1();
         }
 
 
