@@ -1,7 +1,13 @@
 ﻿using System;
 
+
 namespace Chapter10
 {
+    
+
+
+
+
     class Program
     {
         static void Main(string[] args)
@@ -34,18 +40,45 @@ namespace Chapter10
             //myDerived.t();
             #endregion
 
-            Animal MyPet = new StBernard();
-            MyPet.Say();
+            //Animal MyPet = new StBernard();
+            //MyPet.Say();
 
-            MyPet = new Dog();
+            //MyPet = new Dog();
 
-            MyPet.Say();
+            //MyPet.Say();
 
-            MyPet.Age = 5;
+            //MyPet.Age = 5;
 
-            Console.WriteLine(MyPet.Age);
-            
-            
+            //Console.WriteLine(MyPet.Age);
+
+
+            Animal MyPet = new Dog();
+            MyPet.Say(new StBernard());
+           
+
+            //Test[] myTest;
+            //myTest = new Test[10];
+
+            //for (int i = 0; i < 4; i++)
+
+            //myTest[i] = new Test();
+
+            //myTest[0].S = "aaa";
+            //myTest[1].S = "bbb";
+            //myTest[2].S = "ccc";
+            //myTest[3].S = "ddd";
+
+            //for (int i = 0; i < 4; i++)
+            //Console.WriteLine(myTest[i].S);
+
+            //Console.Beep(500, 6000);
+
+            //Console.Title = "hi";
+            //Console.ReadLine();
+
+
+
+
 
         }
     }
