@@ -4,14 +4,8 @@ using System.Text;
 
 namespace Chapter10
 {
-     abstract class Animal
+    interface ISwimmable
     {
-        abstract public void Say();
-
-      
-
-       
-        
-        
+        void Swim();
     }
 }

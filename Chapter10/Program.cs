@@ -52,9 +52,9 @@ namespace Chapter10
             //Console.WriteLine(MyPet.Age);
 
 
-            Animal MyPet = new Dog();
-            MyPet.Say(new StBernard());
-           
+            //Animal MyPet = new Dog();
+            //MyPet.Say(new StBernard());
+
 
             //Test[] myTest;
             //myTest = new Test[10];
@@ -76,6 +76,35 @@ namespace Chapter10
             //Console.Title = "hi";
             //Console.ReadLine();
 
+            
+
+            Cat myCat = new PersianCat();
+
+            DogHouse dh = new DogHouse();
+            Dog[] myDog = new Dog[3];
+            myDog[0] = new StBernard();
+            myDog[1] = new ChowChow();
+            myDog[2] = new Terrier();
+
+            
+                dh.Welcome(myDog[0]);
+
+
+            //dh.Welcome(myCat);
+
+            //dh.Welcome((ISwimmable)myDog[1]);
+            //dh.Welcome((ISwimmable)myCat);
+            
+
+            //((ISwimmable)myDog[1]).Swim();
+
+            
+            
+            Console.ReadLine();
+
+
+            
+        
 
 
 
