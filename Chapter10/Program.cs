@@ -79,7 +79,7 @@ namespace Chapter10
             
 
             Cat myCat = new PersianCat();
-
+            Cat cat = new Cat();
             DogHouse dh = new DogHouse();
             Dog[] myDog = new Dog[3];
             myDog[0] = new StBernard();
@@ -88,6 +88,8 @@ namespace Chapter10
 
             
                 dh.Welcome(myDog[0]);
+                dh.Welcome(myCat);
+            dh.Welcome(cat);
 
 
             //dh.Welcome(myCat);
