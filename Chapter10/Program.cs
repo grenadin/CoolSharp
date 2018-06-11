@@ -99,17 +99,20 @@ namespace Chapter10
             dh.Welcome(cat);
 
 
-            
+            var toob = new StBernard();
+            dh.Welcome(toob);
 
 
             //dh.Welcome(myCat);
 
             //dh.Welcome((ISwimmable)myDog[1]);
             //dh.Welcome((ISwimmable)myCat);
-            
+
 
             //((ISwimmable)myDog[1]).Swim();
 
+            var toobSpecDog = new SpecialDog();
+            dh.Welcome(toobSpecDog);
             
             
             Console.ReadLine();

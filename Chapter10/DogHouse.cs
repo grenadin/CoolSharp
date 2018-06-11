@@ -9,7 +9,7 @@ namespace Chapter10
         public void Welcome(dynamic d)
         {
             d.Say();
-            if(d is Animal)
+            if(d is ISwimmable)
             ((ISwimmable)d).Swim();
             else
                 Console.WriteLine("this animal can not swim");
