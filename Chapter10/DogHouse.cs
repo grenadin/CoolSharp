@@ -9,18 +9,21 @@ namespace Chapter10
         public void Welcome(dynamic d)
         {
             d.Say();
+            if(d is Animal)
             ((ISwimmable)d).Swim();
+            else
+                Console.WriteLine("this animal can not swim");
         }
 
         //public void Welcome(Cat c)
         //{
-        //    c.Say();
+        //    c.Say(); 
         //}
 
         //public void Welcome(ISwimmable s)
         //{
         //    s.Swim();
-      
+
         //}
     }
 }

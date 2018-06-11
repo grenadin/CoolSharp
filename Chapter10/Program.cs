@@ -80,16 +80,24 @@ namespace Chapter10
 
             Cat myCat = new PersianCat();
             Cat cat = new Cat();
+
             DogHouse dh = new DogHouse();
+
             Dog[] myDog = new Dog[3];
+
             myDog[0] = new StBernard();
+
             myDog[1] = new ChowChow();
+              
             myDog[2] = new Terrier();
 
-            
-                dh.Welcome(myDog[0]);
-                dh.Welcome(myCat);
+            dh.Welcome(myDog[0]);
+            dh.Welcome(myDog[1]);
+            dh.Welcome(myDog[2]);
+
+            dh.Welcome(myCat);
             dh.Welcome(cat);
+                
 
 
             //dh.Welcome(myCat);
